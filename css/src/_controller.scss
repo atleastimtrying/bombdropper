@@ -1,0 +1,51 @@
+.controller{
+  .bomb,
+  .left,
+  .right,
+  .up,
+  .down{
+    position:absolute;
+    background: #222;
+    width:33.33333%;
+    color: white;
+    text-align:center;
+    border: 5px solid #111;
+    padding: 3em;
+    text-shadow:  1px 1px 1px #222;
+    text-transform: uppercase;
+    &.active{
+      background:#666;
+    }
+  }
+
+  .left,
+  .right{
+    bottom: 0;
+    height: 50%;
+  }
+  .left{
+    left: 0;
+  }
+  .right{
+    right: 0;
+  }
+
+  .up,
+  .down{
+    left: 33.33333%;
+    height: 50%;
+  }
+  .up{
+    top: 0;
+  }
+  .down{
+    bottom: 0;
+  }
+
+  .bomb{
+    background: #933;
+    height: 50%;
+    top:0;
+    left:0;
+  }
+}
